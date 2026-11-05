@@ -1,0 +1,24 @@
+# Private data and generated render directories never belong in this repo.
+/rendered/
+/.private/
+/backups/
+**/__pycache__/
+*.pyc
+.env
+.env.*
+*.key
+*.pem
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.log
+fish_variables
+*_history
+cookies.sqlite
+logins.json
+key4.db
+cert9.db
+sessionstore*
+**/Cache/
+**/cache/

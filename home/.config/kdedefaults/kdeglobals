@@ -1,0 +1,8 @@
+[General]
+ColorScheme=PurPurNightColorscheme
+
+[Icons]
+Theme=Slot-Dark-Icons
+
+[KDE]
+widgetStyle=Breeze

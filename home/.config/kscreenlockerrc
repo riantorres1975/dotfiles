@@ -1,0 +1,7 @@
+[Daemon]
+Timeout=15
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=file://@HOME@/Pictures/wallpaper.jpg
+PreviewImage=file://@HOME@/Pictures/wallpaper.jpg
+SlidePaths=@HOME@/Pictures/wallpapers/

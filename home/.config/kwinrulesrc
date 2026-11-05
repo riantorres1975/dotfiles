@@ -1,0 +1,14 @@
+[General]
+Order=steam-friends-floating
+
+[steam-friends-floating]
+Description=Steam - Lista de amigos flotante
+Enabled=true
+wmclass=steam
+wmclasscomplete=false
+wmclassmatch=1
+title=Lista de amigos
+titlematch=1
+size=346,756
+sizerule=3
+placementrule=2

@@ -1,0 +1,7 @@
+{
+  "nativeTitleBar": true,
+  "enableShadow": true,
+  "enableRoundedCorners": true,
+  "splashTheming": true,
+  "transparencyOption": "none"
+}

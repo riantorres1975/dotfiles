@@ -1,0 +1,13 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Id": "move-window-and-follow",
+        "Name": "Mover ventana y seguir al escritorio",
+        "Description": "Mueve la ventana activa a un escritorio y cambia al mismo escritorio.",
+        "Version": "1.0",
+        "License": "MIT",
+        "EnabledByDefault": false
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js"
+}

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Selector de wallpapers
+Comment=Carrusel de fondos animados de Waywallen
+Exec=@HOME@/.local/bin/waywallen-selector
+Icon=preferences-desktop-wallpaper
+Terminal=false
+StartupNotify=false
+StartupWMClass=org.local.WaywallenSelector
+X-KDE-Shortcuts=Meta+Alt+W

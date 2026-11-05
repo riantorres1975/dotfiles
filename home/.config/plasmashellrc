@@ -1,0 +1,22 @@
+[PlasmaViews][Panel 2]
+floating=1
+
+[PlasmaViews][Panel 2][Defaults]
+thickness=44
+
+[PlasmaViews][Panel 23]
+floating=0
+floatingApplets=0
+panelLengthMode=2
+panelOpacity=2
+panelVisibility=0
+shell=org.kde.plasma.desktop
+
+[PlasmaViews][Panel 23][Defaults]
+maxLength=2353
+minLength=2274
+thickness=36
+
+[PlasmaViews][Panel 23][Horizontal2560]
+maxLength=2353
+minLength=2274

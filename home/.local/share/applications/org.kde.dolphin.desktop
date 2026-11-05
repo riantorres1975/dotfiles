@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Dolphin
+Exec=env QT_STYLE_OVERRIDE=kvantum dolphin %u
+Icon=org.kde.dolphin
+Type=Application
+Comment=Manage your files
+X-KDE-Shortcuts=Meta+E
+StartupWMClass=dolphin

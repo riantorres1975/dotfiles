@@ -1,0 +1,92 @@
+[global]
+queue_mode = "sequential"
+rotation_secs = 0
+audio_fade_ms = 500
+mute_when_other_audio = false
+audio_capture_enabled = true
+manual_muted = false
+plugin_update_notifications = true
+duplicate_renderers_for_same_wallpaper = false
+pointer_forwarding_enabled = true
+autostart_enabled = false
+hide_tray_icon = false
+debug_logging_enabled = false
+
+[global.renderer]
+enable_audio = false
+volume = 100
+
+[global.layout]
+fillmode = "preserve_aspect_crop"
+align = "center"
+rotation = "normal"
+
+[global.layout.location]
+x = 50
+y = 50
+
+[global.auto_replay]
+any_window_scope = "current_display"
+focused_scope = "current_display"
+maximized_scope = "current_display"
+fullscreen_scope = "current_display"
+any_window = "none"
+focused = "none"
+maximized = "pause"
+fullscreen = "pause"
+session_locked = "stop"
+session_inactive = "stop"
+gamemode = "none"
+on_battery = "none"
+resume_delay_ms = 250
+
+[global.pause_effect]
+kind = "none"
+
+[global.pause_effect.blur]
+radius = 30
+
+[global.transition]
+kind = "fade"
+duration_ms = 500
+angle = 0
+
+[global.transition.origin]
+x = 50
+y = 50
+
+[plugin.waywallen-video]
+render_node = ""
+custom_extent = "1080"
+resolution = "0"
+fps = "30"
+loop_file = "inf"
+enable_audio = "true"
+hwdec = "auto"
+volume = "100"
+
+[plugin.waywallen-image]
+render_node = ""
+custom_extent = "1080"
+fps = "30"
+resolution = "0"
+
+[plugin.wescene-renderer]
+fps = "30"
+volume = "100"
+custom_extent = "1080"
+render_node = ""
+resolution = "2"
+hwdec = "auto"
+enable_audio = "true"
+msaa = "1"
+
+[plugin.weweb-renderer]
+enable_audio = "true"
+render_node = ""
+resolution = "2"
+fps = "30"
+volume = "100"
+remote_debugging_port = "0"
+custom_extent = "1080"
+shared_texture_enabled = "true"
