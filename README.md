@@ -3,6 +3,33 @@
 Mi configuración de **CachyOS + KDE Plasma en Wayland**: tonos oscuros y morados,
 ventanas en mosaico, transparencias y fondos animados.
 
+## Capturas
+
+### Escritorio
+
+![Escritorio con wallpaper animado, panel superior y acentos morados](docs/screenshots/desktop.webp)
+
+### Kitty, Btop y Cava
+
+![Terminales en mosaico con Fastfetch, Btop y el visualizador Cava](docs/screenshots/terminales.webp)
+
+<details>
+<summary>Dolphin, selector de wallpapers y Andromeda</summary>
+
+### Dolphin y terminal flotante
+
+![Dolphin con Kvantum y una terminal flotante con Fastfetch](docs/screenshots/dolphin.webp)
+
+### Selector de wallpapers
+
+![Carrusel de fondos con tarjetas diagonales sobre el escritorio](docs/screenshots/wallpaper-selector.webp)
+
+### Andromeda Launcher
+
+![Menú Andromeda con fondo translúcido y esquinas redondeadas](docs/screenshots/andromeda.webp)
+
+</details>
+
 ## Setup
 
 | Componente | Configuración |
