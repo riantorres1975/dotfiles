@@ -10,5 +10,8 @@ Seen=true
 [Applications][org.fedoraproject.MediaWriter]
 Seen=true
 
+[Applications][org.kde.kdenlive]
+Seen=true
+
 [Applications][org.waywallen.waywallen]
 Seen=true
