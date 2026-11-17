@@ -1,6 +1,6 @@
 # Dependencias y componentes
 
-Esta instantánea fue preparada en CachyOS, KDE Plasma/KWin 6.8.2, Wayland y Python 3.14.
+Esta instantánea fue preparada en CachyOS, KDE Plasma/KWin 6.8.3, Wayland y Python 3.14.
 Los scripts de exportación requieren Python 3.11+ por el lector TOML de la biblioteca estándar.
 
 ## Aplicaciones y fuentes
@@ -35,6 +35,17 @@ Los scripts de exportación requieren Python 3.11+ por el lector TOML de la bibl
 No se incluyen `.so`, scripts completos descargados de Krohnkite ni paquetes del
 gestor de ventanas. Instala versiones compatibles con tu KWin; copiar binarios de
 otra máquina puede impedir que un efecto cargue.
+
+Si una actualización elimina los bordes y las esquinas redondeadas, comprueba si
+KWin rechaza `kwin4_effect_shapecorners` por estar compilado para otra versión.
+En KWin 6.8.3 se verificó `kwin-effect-rounded-corners` 0.11.0 reconstruido
+localmente como `0.11.0-1.2`; reinstalar un paquete compilado para 6.8.2 no basta.
+Tras instalar una compilación compatible, carga solo el efecto, sin recargar Krohnkite:
+
+```bash
+gdbus call --session --dest org.kde.KWin --object-path /Effects \
+  --method org.kde.kwin.Effects.loadEffect kwin4_effect_shapecorners
+```
 
 ## Widgets de terceros del panel
 
