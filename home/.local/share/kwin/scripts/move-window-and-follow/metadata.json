@@ -3,8 +3,8 @@
     "KPlugin": {
         "Id": "move-window-and-follow",
         "Name": "Mover ventana y seguir al escritorio",
-        "Description": "Mueve la ventana activa a un escritorio y cambia al mismo escritorio.",
-        "Version": "1.0",
+        "Description": "Mueve y sigue ventanas a los escritorios 1–9 por posición; permite crear un escritorio nuevo.",
+        "Version": "1.1",
         "License": "MIT",
         "EnabledByDefault": false
     },

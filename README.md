@@ -50,8 +50,8 @@ ventanas en mosaico, transparencias y fondos animados.
 | Wallpapers | Waywallen + [selector con carrusel](https://github.com/riantorres1975/waywallen-selector) |
 
 Panel superior con bandeja, controles de música, visualizador y widgets.
-Cinco escritorios virtuales; los atajos personalizados de navegación y mover/seguir
-están configurados para los escritorios 1–4.
+Cinco escritorios virtuales; navegación y mover/seguir por posición para los
+escritorios 1–9. Los que agregues se recorren también con siguiente/anterior.
 
 ## Atajos
 
@@ -59,12 +59,17 @@ están configurados para los escritorios 1–4.
 |---|---|
 | Terminal | `Win + Enter` o `Ctrl + Alt + T` |
 | Dolphin | `Win + E` |
-| Cambiar de escritorio | `Win + 1–4` |
-| Mover ventana y seguirla | `Win + Shift + 1–4` |
+| Cambiar de escritorio por posición | `Win + 1–9` |
+| Mover ventana y seguirla | `Win + Shift + 1–9` |
+| Crear escritorio y entrar | `Win + Ctrl + D` |
+| Escritorio siguiente/anterior | `Win + Tab` / `Win + Shift + Tab` |
 | Enfocar otra ventana | `Win + flechas` |
 | Reordenar ventanas | `Win + Shift + flechas` |
 | Cerrar ventana | `Win + W` |
 | Selector de wallpapers | `Win + Alt + W` |
+
+`Win + 1–9` se reserva para escritorios, no para las aplicaciones del panel.
+Agregar o reordenar escritorios no deja los atajos ligados a identificadores antiguos.
 
 ## Archivos
 

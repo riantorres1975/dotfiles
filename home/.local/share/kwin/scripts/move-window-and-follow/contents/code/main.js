@@ -19,7 +19,9 @@ function moveWindowAndFollow(index) {
     workspace.activeWindow = window;
 }
 
-for (var index = 0; index < 4; ++index) {
+// Resolve targets from the current ordered list on every press. Adding,
+// removing, or reordering desktops must not leave shortcuts tied to old IDs.
+for (var index = 0; index < 9; ++index) {
     (function (desktopIndex) {
         registerShortcut(
             "Move Window and Follow Desktop " + (desktopIndex + 1),
@@ -29,3 +31,17 @@ for (var index = 0; index < 4; ++index) {
         );
     })(index);
 }
+
+registerShortcut(
+    "Create Desktop and Follow",
+    "Crear escritorio y cambiar a él",
+    "Meta+Ctrl+D",
+    function () {
+        var position = workspace.desktops.length;
+        workspace.createDesktop(position, "");
+        // At KWin's desktop limit creation can fail; do not change desktops.
+        if (workspace.desktops.length > position) {
+            workspace.currentDesktop = workspace.desktops[position];
+        }
+    }
+);
