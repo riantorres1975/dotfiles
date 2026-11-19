@@ -31,6 +31,9 @@ Los scripts de exportación requieren Python 3.11+ por el lector TOML de la bibl
 - Krohnkite: <https://github.com/anametologin/krohnkite>
 - Efectos instalados: `kwin4_effect_shapecorners` y `kwin4_effect_geometry_change`.
 - Script local `move-window-and-follow`, incluido en `home/.local/share/kwin/scripts/`.
+- Script local `centered-float` para `Win + F`, incluido en la misma carpeta.
+  Requiere Krohnkite con sus capas predeterminadas: mosaico debajo y flotantes normales.
+  Delega el cambio de estado a Krohnkite; no lo modifica ni recarga.
 
 No se incluyen `.so`, scripts completos descargados de Krohnkite ni paquetes del
 gestor de ventanas. Instala versiones compatibles con tu KWin; copiar binarios de

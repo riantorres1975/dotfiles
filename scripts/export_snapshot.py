@@ -21,6 +21,8 @@ DIRECT_FILES = [
     ".local/share/konsole/CristalOscuroRedondeado.colorscheme",
     ".local/share/kwin/scripts/move-window-and-follow/metadata.json",
     ".local/share/kwin/scripts/move-window-and-follow/contents/code/main.js",
+    ".local/share/kwin/scripts/centered-float/metadata.json",
+    ".local/share/kwin/scripts/centered-float/contents/code/main.js",
     ".var/app/dev.vencord.Vesktop/config/vesktop/settings/quickCss.css",
 ]
 INI_FILES = [

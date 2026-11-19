@@ -28,6 +28,19 @@ class PrivacyTests(unittest.TestCase):
         path.write_text(text)
         return path
 
+    def test_centered_float_helper_is_included_without_runtime_state(self):
+        base = ".local/share/kwin/scripts/centered-float/"
+        self.put(base + "metadata.json", '{"KPlugin":{"Id":"centered-float"}}\n')
+        self.put(base + "contents/code/main.js", '"use strict";\nvar records = {};\n')
+        self.put(".local/state/kwin-shortcuts/private-backup.json", "PRIVATE_STATE")
+        export = module.Exporter(self.source, self.output)
+        export.collect()
+        export.write()
+        self.assertTrue((self.output / "home" / base / "metadata.json").is_file())
+        self.assertTrue((self.output / "home" / base / "contents/code/main.js").is_file())
+        self.assertFalse(any("PRIVATE_STATE" in text for text in export.files.values()))
+        self.assertFalse((self.output / "home/.local/state").exists())
+
     def test_weather_location_removed_but_layout_retained(self):
         source = self.put(".config/plasma-org.kde.plasma.desktop-appletsrc", """[Containments][1]
 plugin=org.kde.panel

@@ -1,0 +1,13 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Id": "centered-float",
+        "Name": "Flotante compacta y centrada",
+        "Description": "Complementa el cambio a flotante de Krohnkite sin modificar ni recargar su script.",
+        "Version": "1.0",
+        "License": "MIT",
+        "EnabledByDefault": false
+    },
+    "X-Plasma-API": "javascript",
+    "X-Plasma-MainScript": "code/main.js"
+}

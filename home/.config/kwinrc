@@ -11,6 +11,7 @@ Rows=1
 Duration=500
 
 [Plugins]
+centered-floatEnabled=true
 krohnkiteEnabled=true
 kwin4_effect_geometry_changeEnabled=true
 kwin4_effect_shapecornersEnabled=true
