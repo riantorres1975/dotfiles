@@ -72,10 +72,11 @@ escritorios 1–9. Los que agregues se recorren también con siguiente/anterior.
 `Win + 1–9` se reserva para escritorios, no para las aplicaciones del panel.
 Agregar o reordenar escritorios no deja los atajos ligados a identificadores antiguos.
 
-`Win + F` centra la ventana flotante y limita su tamaño inicial al 70 % del área
-útil, con un máximo de 1280 × 900 y sin agrandar el mosaico original, salvo mínimos
-de la aplicación. Otro toque devuelve al mosaico. Los tamaños manuales se recuerdan
-mientras la ventana siga abierta; no se cambian juegos a pantalla completa.
+`Win + F` centra la ventana flotante con un tamaño inicial de **1594 × 920**,
+ajustado al área útil y a los límites de la aplicación. Otro toque devuelve al
+mosaico. Los tamaños manuales se recuerdan mientras la ventana siga abierta;
+no se cambian juegos a pantalla completa. La referencia se ajusta con
+`floatingWidth` y `floatingHeight` en `[Script-centered-float]` de `kwinrc`.
 
 ## Archivos
 

@@ -42,6 +42,10 @@ SecondOutlineThickness=0
 Size=12
 UseSquircleShape=false
 
+[Script-centered-float]
+floatingHeight=920
+floatingWidth=1594
+
 [Script-krohnkite]
 floatingTitle=Lista de amigos
 noTileBorder=true

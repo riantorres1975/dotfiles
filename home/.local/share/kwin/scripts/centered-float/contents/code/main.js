@@ -6,6 +6,8 @@ var records = {};
 var requestInFlight = false;
 var requestSerial = 0;
 var pendingRequest = null;
+var preferredWidth = Number(readConfig("floatingWidth", 0));
+var preferredHeight = Number(readConfig("floatingHeight", 0));
 var requestTimeout = new QTimer();
 requestTimeout.singleShot = true;
 requestTimeout.timeout.connect(function () {
@@ -19,10 +21,12 @@ function copySize(geometry) {
 }
 
 function floatingGeometry(before, remembered, area, minimum, maximum) {
-    // Never enlarge a newly floated tile. Once the user has resized a float,
-    // retain that size instead of progressively shrinking on every toggle.
-    var width = remembered ? remembered.width : Math.min(before.width, area.width * 0.70, 1280);
-    var height = remembered ? remembered.height : Math.min(before.height, area.height * 0.70, 900);
+    // An explicit reference size replaces the compact initial-size heuristic.
+    // Manual floating sizes still take precedence on subsequent toggles.
+    var width = remembered ? remembered.width : preferredWidth > 0 ? preferredWidth
+        : Math.min(before.width, area.width * 0.70, 1280);
+    var height = remembered ? remembered.height : preferredHeight > 0 ? preferredHeight
+        : Math.min(before.height, area.height * 0.70, 900);
     var minWidth = Math.max(1, minimum.width);
     var minHeight = Math.max(1, minimum.height);
     var maxWidth = maximum.width > 0 ? maximum.width : area.width;
